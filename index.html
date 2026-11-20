@@ -1,26 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Document encoding and viewport -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Page identity and search metadata -->
   <title>TOPTEN COOPERATIVE</title>
-  <meta name="description" content="TOPTEN Cooperative (Owerri-North Multipurpose Society) offers real estate marketing and trading, thrift contributions and food distribution in Imo State, Nigeria.">
-  <link rel="icon" href="favicon.ico" sizes="48x48">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/logo/favicon-192.png">
-  <link rel="apple-touch-icon" href="assets/images/logo/apple-touch-icon.png">
+  <meta name="description"
+    content="TOPTEN Cooperative (Owerri-North Multipurpose Society) offers real estate marketing and trading, thrift contributions and food distribution in Imo State, Nigeria.">
+
+  <!-- Open Graph metadata for social sharing -->
+  <meta property="og:title" content="TOPTEN COOPERATIVE">
+  <meta property="og:description"
+    content="A cooperative focused on real estate marketing and trading, thrift contributions, food distribution and related services in Imo State, Nigeria.">
+  <meta property="og:image" content="#">
+  <meta property="og:url" content="#">
+
+  <!-- Twitter Card metadata for social sharing -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TOPTEN COOPERATIVE">
+  <meta name="twitter:description"
+    content="A cooperative focused on real estate marketing and trading, thrift contributions, food distribution and related services in Imo State, Nigeria.">
+  <meta name="twitter:image" content="#">
+  <meta name="twitter:url" content="#">
+
+  <!-- Favicons and touch icon -->
+  <link rel="icon" href="images/favicon/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/logo/favicon-192.png">
+  <link rel="apple-touch-icon" href="images/logo/apple-touch-icon.png">
+
+  <!-- External and local stylesheets -->
   <!-- Fonts: Plus Jakarta Sans (text) and Material Symbols (icons) from Google Fonts. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/intl-tel-input@29.5.11/dist/css/intlTelInput.css">
+
+  <!-- Browser normalization -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <!-- Mobile-first base styles -->
+  <link rel="stylesheet" href="styles/small.css">
+  <!-- Responsive and wider-screen styles -->
+  <link rel="stylesheet" href="styles/large.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="site-header__inner">
       <a class="brand" href="index.html">
-        <img class="brand__logo" src="assets/images/logo/topten-logo.png" alt="" width="320" height="313">
+        <img class="brand__logo" src="images/logo/topten-logo.png" alt="" width="320" height="313">
         <span class="brand__text">
           <span class="brand__name">TOPTEN COOPERATIVE</span>
           <span class="brand__society">Owerri-North Multipurpose Society</span>
@@ -87,65 +122,100 @@
 
   <main class="site-main bg-surface" id="main-content">
     <div class="flex flex-col w-full">
+
       <!-- Four-photo hero carousel with manual slide controls. -->
-      <section class="hero" id="hero-slider-container" aria-roledescription="carousel" aria-label="Featured announcements">
+      <section class="hero" id="hero-slider-container" aria-roledescription="carousel"
+        aria-label="Featured announcements">
         <div class="hero__viewport">
           <div class="hero-slide is-active" aria-label="Slide 1 of 4" role="group" aria-roledescription="slide">
-            <img class="hero-slide__image" src="assets/images/banners/home-hero-1.jpg" alt="" decoding="async">
+            <img class="hero-slide__image" src="images/banners/home-hero-1.jpg" alt="" decoding="async">
             <div class="hero-slide__overlay"></div>
             <div class="relative max-w-[1280px] w-full mx-auto px-gutter-mobile md:px-gutter">
               <div class="max-w-2xl text-on-primary">
-                <span class="inline-block font-caption-label text-caption-label font-bold text-secondary-fixed tracking-widest uppercase mb-3">Institutional Solidarity</span>
-                <h1 class="font-display-hero text-display-hero-mobile md:text-display-hero font-bold tracking-tight text-on-primary leading-tight mb-4">THE POWER OF TEN!</h1>
-                <p class="font-body-large text-body-mobile md:text-body-large text-surface-container-highest max-w-xl mb-8 leading-relaxed">A cooperative focused on real estate marketing and trading, thrift contributions, food distribution and related services.</p>
+                <span
+                  class="inline-block font-caption-label text-caption-label font-bold text-secondary-fixed tracking-widest uppercase mb-3">Institutional
+                  Solidarity</span>
+                <h1
+                  class="font-display-hero text-display-hero-mobile md:text-display-hero font-bold tracking-tight text-on-primary leading-tight mb-4">
+                  THE POWER OF TEN!</h1>
+                <p
+                  class="font-body-large text-body-mobile md:text-body-large text-surface-container-highest max-w-xl mb-8 leading-relaxed">
+                  A cooperative focused on real estate marketing and trading, thrift contributions, food distribution
+                  and related services.</p>
                 <div class="flex items-center gap-4">
-                  <a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-button-label text-button-label px-7 py-3 rounded-none hover:bg-primary transition-colors" href="about-us.html">DISCOVER TOPTEN</a>
+                  <a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-button-label text-button-label px-7 py-3 rounded-none hover:bg-primary transition-colors"
+                    href="about-us.html">DISCOVER TOPTEN</a>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="hero-slide" inert aria-label="Slide 2 of 4" role="group" aria-roledescription="slide">
-            <img class="hero-slide__image" src="assets/images/banners/home-hero-2.jpg" alt="" decoding="async" loading="lazy">
+            <img class="hero-slide__image" src="images/banners/home-hero-2.jpg" alt="" decoding="async" loading="lazy">
             <div class="hero-slide__overlay"></div>
             <div class="relative max-w-[1280px] w-full mx-auto px-gutter-mobile md:px-gutter">
               <div class="max-w-2xl text-on-primary">
-                <span class="inline-block font-caption-label text-caption-label font-bold text-secondary-fixed tracking-widest uppercase mb-3">Property Wealth Creation</span>
-                <h2 class="font-display-hero text-display-hero-mobile md:text-display-hero font-bold tracking-tight text-on-primary leading-tight mb-4">Explore Real Estate Opportunities</h2>
-                <p class="font-body-large text-body-mobile md:text-body-large text-surface-container-highest max-w-xl mb-8 leading-relaxed">Discover TOPTEN's Homeowners Thrift, Landowners Thrift and LandTrade services.</p>
+                <span
+                  class="inline-block font-caption-label text-caption-label font-bold text-secondary-fixed tracking-widest uppercase mb-3">Property
+                  Wealth Creation</span>
+                <h2
+                  class="font-display-hero text-display-hero-mobile md:text-display-hero font-bold tracking-tight text-on-primary leading-tight mb-4">
+                  Explore Real Estate Opportunities</h2>
+                <p
+                  class="font-body-large text-body-mobile md:text-body-large text-surface-container-highest max-w-xl mb-8 leading-relaxed">
+                  Discover TOPTEN's Homeowners Thrift, Landowners Thrift and LandTrade services.</p>
                 <div class="flex items-center gap-4">
-                  <a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-button-label text-button-label px-7 py-3 rounded-none hover:bg-primary transition-colors" href="services.html">EXPLORE SERVICES</a>
+                  <a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-button-label text-button-label px-7 py-3 rounded-none hover:bg-primary transition-colors"
+                    href="services.html">EXPLORE SERVICES</a>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="hero-slide" inert aria-label="Slide 3 of 4" role="group" aria-roledescription="slide">
-            <img class="hero-slide__image" src="assets/images/banners/home-hero-3.jpg" alt="" decoding="async" loading="lazy">
+            <img class="hero-slide__image" src="images/banners/home-hero-3.jpg" alt="" decoding="async" loading="lazy">
             <div class="hero-slide__overlay"></div>
             <div class="relative max-w-[1280px] w-full mx-auto px-gutter-mobile md:px-gutter">
               <div class="max-w-2xl text-on-primary">
-                <span class="inline-block font-caption-label text-caption-label font-bold text-secondary-fixed tracking-widest uppercase mb-3">Structured Communal Savings</span>
-                <h2 class="font-display-hero text-display-hero-mobile md:text-display-hero font-bold tracking-tight text-on-primary leading-tight mb-4">Build Through Cooperative Thrift</h2>
-                <p class="font-body-large text-body-mobile md:text-body-large text-surface-container-highest max-w-xl mb-8 leading-relaxed">Explore ThriftSave and FoodThrift contribution options.</p>
+                <span
+                  class="inline-block font-caption-label text-caption-label font-bold text-secondary-fixed tracking-widest uppercase mb-3">Structured
+                  Communal Savings</span>
+                <h2
+                  class="font-display-hero text-display-hero-mobile md:text-display-hero font-bold tracking-tight text-on-primary leading-tight mb-4">
+                  Build Through Cooperative Thrift</h2>
+                <p
+                  class="font-body-large text-body-mobile md:text-body-large text-surface-container-highest max-w-xl mb-8 leading-relaxed">
+                  Explore ThriftSave and FoodThrift contribution options.</p>
                 <div class="flex items-center gap-4">
-                  <a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-button-label text-button-label px-7 py-3 rounded-none hover:bg-primary transition-colors" href="services.html">VIEW OUR SERVICES</a>
+                  <a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-button-label text-button-label px-7 py-3 rounded-none hover:bg-primary transition-colors"
+                    href="services.html">VIEW OUR SERVICES</a>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="hero-slide" inert aria-label="Slide 4 of 4" role="group" aria-roledescription="slide">
-            <img class="hero-slide__image" src="assets/images/banners/home-hero-4.jpg" alt="" decoding="async" loading="lazy">
+            <img class="hero-slide__image" src="images/banners/home-hero-4.jpg" alt="" decoding="async" loading="lazy">
             <div class="hero-slide__overlay"></div>
             <div class="relative max-w-[1280px] w-full mx-auto px-gutter-mobile md:px-gutter">
               <div class="max-w-2xl text-on-primary">
-                <span class="inline-block font-caption-label text-caption-label font-bold text-secondary-fixed tracking-widest uppercase mb-3">Direct Engagement</span>
-                <h2 class="font-display-hero text-display-hero-mobile md:text-display-hero font-bold tracking-tight text-on-primary leading-tight mb-4">Let's Connect</h2>
-                <p class="font-body-large text-body-mobile md:text-body-large text-surface-container-highest max-w-xl mb-8 leading-relaxed">Have questions about TOPTEN and its services? Get in touch with us.</p>
+                <span
+                  class="inline-block font-caption-label text-caption-label font-bold text-secondary-fixed tracking-widest uppercase mb-3">Direct
+                  Engagement</span>
+                <h2
+                  class="font-display-hero text-display-hero-mobile md:text-display-hero font-bold tracking-tight text-on-primary leading-tight mb-4">
+                  Let's Connect</h2>
+                <p
+                  class="font-body-large text-body-mobile md:text-body-large text-surface-container-highest max-w-xl mb-8 leading-relaxed">
+                  Have questions about TOPTEN and its services? Get in touch with us.</p>
                 <div class="flex items-center gap-4">
-                  <a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-button-label text-button-label px-7 py-3 rounded-none hover:bg-primary transition-colors" href="contact-us.html">CONTACT US</a>
+                  <a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-button-label text-button-label px-7 py-3 rounded-none hover:bg-primary transition-colors"
+                    href="contact-us.html">CONTACT US</a>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="hero-controls__arrows">
             <button aria-label="Previous Slide" class="hero-control" id="hero-prev" type="button">
               <span class="material-symbols-outlined text-[20px]">arrow_back</span>
@@ -154,6 +224,7 @@
               <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
             </button>
           </div>
+
           <div class="hero-controls__dots">
             <button aria-label="Slide 1" class="hero-dot is-active" type="button"></button>
             <button aria-label="Slide 2" class="hero-dot" type="button"></button>
@@ -162,14 +233,19 @@
           </div>
         </div>
       </section>
+
       <!-- Membership interest form with conditional contact-method fields. -->
       <section class="w-full bg-light-blue-surface py-space-xl">
         <div class="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
             <div class="lg:col-span-5 flex flex-col space-y-4">
-              <span class="font-caption-label font-bold uppercase tracking-wider text-primary text-lg">Membership Gateway</span>
-              <h2 class="font-headline-section text-headline-section-mobile md:text-headline-section text-on-surface font-semibold tracking-tight">Become a TOPTEN Member</h2>
-              <p class="font-body-large text-body-mobile md:text-body-large text-on-surface-variant leading-relaxed">Interested in joining TOPTEN? Leave your details and let us know how to reach you.</p>
+              <span class="font-caption-label font-bold uppercase tracking-wider text-primary text-lg">Membership
+                Gateway</span>
+              <h2
+                class="font-headline-section text-headline-section-mobile md:text-headline-section text-on-surface font-semibold tracking-tight">
+                Become a TOPTEN Member</h2>
+              <p class="font-body-large text-body-mobile md:text-body-large text-on-surface-variant leading-relaxed">
+                Interested in joining TOPTEN? Leave your details and let us know how to reach you.</p>
               <div class="pt-4 flex flex-col space-y-3 font-body-default text-body-default text-on-surface-variant">
                 <div class="flex items-center gap-3">
                   <span class="material-symbols-outlined text-primary text-[20px]">check_box</span>
@@ -187,79 +263,119 @@
             </div>
             <div class="lg:col-span-7">
               <div class="bg-surface-white p-4 sm:p-6 lg:p-8 shadow-sm">
-                <h3 class="font-title-card text-title-card text-on-surface font-semibold mb-2">Expression of Interest</h3>
-                <p class="font-body-default text-body-default text-on-surface-variant mb-6">Complete this brief form to initiate accredited membership advisory.</p>
-                <form class="member-form flex flex-col space-y-5" action="#membership-status-msg" method="get">
+                <h3 class="font-title-card text-title-card text-on-surface font-semibold mb-2">Expression of Interest
+                </h3>
+                <p class="font-body-default text-body-default text-on-surface-variant mb-6">Complete this brief form to
+                  initiate accredited membership advisory.</p>
+                <form class="member-form flex flex-col space-y-5" action="#membership-status-msg" method="post" novalidate>
                   <div class="flex flex-col space-y-1.5">
-                    <label class="font-caption-label text-caption-label font-semibold text-on-surface" for="member-full-name">
+                    <label class="font-caption-label text-caption-label font-semibold text-on-surface"
+                      for="member-full-name">
                       Full Name
                       <span class="text-error">*</span>
                     </label>
-                    <input class="form-field" id="member-full-name" placeholder="e.g. Chukwuma Emmanuel Obi" required type="text" autocomplete="name">
+                    <input class="form-field" id="member-full-name" name="membership_inquiry_name"
+                      placeholder="e.g. Chukwuma Emmanuel Obi" required type="text" autocomplete="name"
+                      aria-describedby="member-full-name-error">
+                    <p class="form-field-error" id="member-full-name-error" hidden></p>
                   </div>
                   <div class="flex flex-col space-y-2">
-                    <label class="font-caption-label text-caption-label font-semibold text-on-surface">Preferred Contact Method <span class="text-error">*</span></label>
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                      <label class="contact-method flex items-center justify-center min-h-[44px] p-3 cursor-pointer select-none bg-surface-container-low transition-colors text-on-surface">
-                        <input checked class="sr-only" name="contact-method" type="radio" value="email">
+                    <span class="font-caption-label text-caption-label font-semibold text-on-surface"
+                      id="member-contact-method-label">Preferred Contact Method <span
+                        class="text-error">*</span></span>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2" role="radiogroup"
+                      aria-labelledby="member-contact-method-label" aria-describedby="member-contact-method-error">
+                      <label
+                        class="contact-method flex items-center justify-center min-h-[44px] p-3 cursor-pointer select-none bg-surface-container-low transition-colors text-on-surface">
+                        <input checked class="sr-only" name="preferred_contact_method" required type="radio"
+                          value="email">
                         <span class="font-button-label text-button-label flex items-center gap-1.5">
                           <span class="material-symbols-outlined text-[18px]">email</span>
                           Email
                         </span>
                       </label>
-                      <label class="contact-method flex items-center justify-center min-h-[44px] p-3 cursor-pointer select-none bg-surface-container-low transition-colors text-on-surface">
-                        <input class="sr-only" name="contact-method" type="radio" value="phone">
+                      <label
+                        class="contact-method flex items-center justify-center min-h-[44px] p-3 cursor-pointer select-none bg-surface-container-low transition-colors text-on-surface">
+                        <input class="sr-only" name="preferred_contact_method" type="radio" value="phone">
                         <span class="font-button-label text-button-label flex items-center gap-1.5">
                           <span class="material-symbols-outlined text-[18px]">phone</span>
                           Phone
                         </span>
                       </label>
-                      <label class="contact-method flex items-center justify-center min-h-[44px] p-3 cursor-pointer select-none bg-surface-container-low transition-colors text-on-surface">
-                        <input class="sr-only" name="contact-method" type="radio" value="whatsapp">
+                      <label
+                        class="contact-method flex items-center justify-center min-h-[44px] p-3 cursor-pointer select-none bg-surface-container-low transition-colors text-on-surface">
+                        <input class="sr-only" name="preferred_contact_method" type="radio" value="whatsapp">
                         <span class="font-button-label text-button-label flex items-center gap-1.5">
-                          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+                          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
+                            </path>
+                          </svg>
                           WhatsApp
                         </span>
                       </label>
                     </div>
+                    <p class="form-field-error" id="member-contact-method-error" hidden></p>
                   </div>
                   <div class="contact-field contact-field--email flex-col space-y-1.5">
-                    <label class="font-caption-label text-caption-label font-semibold text-on-surface" for="member-email">
+                    <label class="font-caption-label text-caption-label font-semibold text-on-surface"
+                      for="member-email">
                       Email Address
-                      <span class="text-error">*</span>
+                      <span class="text-error" data-required-indicator="email">*</span>
                     </label>
-                    <input class="form-field" id="member-email" placeholder="name@example.com" type="email" autocomplete="email">
+                    <input class="form-field" id="member-email" name="email" placeholder="name@example.com"
+                      type="email" autocomplete="email" aria-describedby="member-email-error">
+                    <p class="form-field-error" id="member-email-error" hidden></p>
                   </div>
                   <div class="contact-field contact-field--phone flex-col space-y-1.5">
-                    <label class="font-caption-label text-caption-label font-semibold text-on-surface" for="member-phone">
+                    <label class="font-caption-label text-caption-label font-semibold text-on-surface"
+                      for="member-phone">
                       Phone Number
-                      <span class="text-error">*</span>
+                      <span class="text-error" data-required-indicator="phone" hidden>*</span>
                     </label>
-                    <input class="form-field" id="member-phone" placeholder="+234 800 000 0000" type="tel" autocomplete="tel">
+                    <input class="form-field" id="member-phone" name="phone" placeholder="800 000 0000" type="tel"
+                      autocomplete="tel" aria-describedby="member-phone-error">
+                    <p class="form-field-error" id="member-phone-error" hidden></p>
                   </div>
                   <div class="contact-field contact-field--whatsapp flex-col space-y-1.5">
-                    <label class="font-caption-label text-caption-label font-semibold text-on-surface" for="member-whatsapp">
+                    <label class="font-caption-label text-caption-label font-semibold text-on-surface"
+                      for="member-whatsapp">
                       WhatsApp Number
-                      <span class="text-error">*</span>
+                      <span class="text-error" data-required-indicator="whatsapp" hidden>*</span>
                     </label>
-                    <input class="form-field" id="member-whatsapp" placeholder="+234 800 000 0000" type="tel" autocomplete="off">
+                    <input class="form-field" id="member-whatsapp" name="hs_whatsapp_phone_number"
+                      placeholder="800 000 0000" type="tel" autocomplete="tel"
+                      aria-describedby="member-whatsapp-error">
+                    <p class="form-field-error" id="member-whatsapp-error" hidden></p>
                   </div>
                   <div class="flex items-start gap-3 pt-1">
-                    <input class="mt-1 h-4 w-4 rounded-none accent-primary-container cursor-pointer" id="agree-privacy" required type="checkbox">
-                    <label class="font-legal-micro text-legal-micro text-on-surface-variant leading-snug cursor-pointer" for="agree-privacy">
+                    <input class="mt-1 h-4 w-4 rounded-none accent-primary-container cursor-pointer" id="agree-privacy"
+                      required type="checkbox">
+                    <label class="font-legal-micro text-legal-micro text-on-surface-variant leading-snug cursor-pointer"
+                      for="agree-privacy">
                       I have read and agree to the
-                      <a class="text-primary font-semibold hover:underline" href="privacy-policy.html">Privacy Policy</a>
+                      <a class="text-primary font-semibold hover:underline" href="privacy-policy.html">Privacy
+                        Policy</a>
                       .
                     </label>
                   </div>
+                  <div class="member-form__trap" aria-hidden="true">
+                    <label for="member-website">Leave this field empty</label>
+                    <input id="member-website" name="website" type="text" tabindex="-1" autocomplete="off">
+                  </div>
                   <div class="pt-2">
-                    <button class="w-full min-h-[48px] bg-primary-container text-on-primary font-button-label text-button-label px-7 py-3 rounded-none hover:bg-primary transition-colors flex items-center justify-center gap-2" type="submit">
-                      <span>EXPRESS MEMBERSHIP INTEREST</span>
+                    <button
+                      class="w-full min-h-[48px] bg-primary-container text-on-primary font-button-label text-button-label px-7 py-3 rounded-none hover:bg-primary transition-colors flex items-center justify-center gap-2"
+                      type="submit" aria-busy="false" disabled>
+                      <span data-submit-label>EXPRESS MEMBERSHIP INTEREST</span>
                       <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
                     </button>
                   </div>
-                  <p class="font-legal-micro text-legal-micro text-outline text-center mt-2">Form submissions require backend CRM/endpoint configuration before production launch.</p>
-                  <div class="form-status p-4 bg-primary text-on-primary font-body-default text-body-default text-center" id="membership-status-msg" role="status">This form is not yet connected to live submissions. Please contact TOPTEN through the Contact Us page.</div>
+                  <p class="font-legal-micro text-legal-micro text-outline text-center mt-2">Your details will be used
+                    to follow up about your membership enquiry.</p>
+                  <div
+                    class="form-status p-4 bg-primary text-on-primary font-body-default text-body-default text-center"
+                    id="membership-status-msg" role="status" aria-live="polite" aria-atomic="true" hidden></div>
                 </form>
               </div>
             </div>
@@ -271,135 +387,180 @@
         <script type="application/json" id="home-showcase-slides">
           [
             {
-              "src": "assets/images/general/home-showcase-01.jpg",
+              "src": "images/general/home-showcase-01.jpg",
               "alt": "Cooperative members in purple tops posing beside boxes, jerrycans and food items outside a market shop."
             },
             {
-              "src": "assets/images/general/home-showcase-02.jpg",
+              "src": "images/general/home-showcase-02.jpg",
               "alt": "A group in purple tops standing in front of a shop with packaged goods and jerrycans."
             },
             {
-              "src": "assets/images/general/home-showcase-03.jpg",
+              "src": "images/general/home-showcase-03.jpg",
               "alt": "A group in white polo shirts standing behind boxes, jerrycans and food items in a market."
             },
             {
-              "src": "assets/images/general/home-showcase-04.jpg",
+              "src": "images/general/home-showcase-04.jpg",
               "alt": "A group in white tops standing beside a bus with packs of provisions in front of them."
             },
             {
-              "src": "assets/images/general/home-showcase-05.jpg",
+              "src": "images/general/home-showcase-05.jpg",
               "alt": "A group in white tops with provisions and bags of food items beside a van."
             },
             {
-              "src": "assets/images/general/home-showcase-06.jpg",
+              "src": "images/general/home-showcase-06.jpg",
               "alt": "A group standing in a market lane with boxes of provisions and bags of food items."
             },
             {
-              "src": "assets/images/general/home-showcase-07.jpg",
+              "src": "images/general/home-showcase-07.jpg",
               "alt": "A group gathered in front of a shop with a stack of provisions."
             },
             {
-              "src": "assets/images/general/home-showcase-08.jpg",
+              "src": "images/general/home-showcase-08.jpg",
               "alt": "A group in white tops standing in front of shops with bags of food items."
             },
             {
-              "src": "assets/images/general/home-showcase-09.jpg",
+              "src": "images/general/home-showcase-09.jpg",
               "alt": "A group in white tops with boxes and sacks of provisions on a busy market street."
             },
             {
-              "src": "assets/images/general/home-showcase-10.jpg",
+              "src": "images/general/home-showcase-10.jpg",
               "alt": "A group in white tops beside a van with boxes and sacks of provisions."
             },
             {
-              "src": "assets/images/general/home-showcase-11.jpg",
+              "src": "images/general/home-showcase-11.jpg",
               "alt": "A group in white tops with boxes of provisions outside a market stall."
             }
           ]
         </script>
-        <div aria-label="Photo slideshow" aria-live="off" aria-roledescription="carousel" class="home-showcase-stage" data-home-showcase role="group">
-          <img alt="Cooperative members in purple tops posing beside boxes, jerrycans and food items outside a market shop." class="home-showcase-image is-active" data-home-showcase-layer="0" decoding="async" fetchpriority="low" loading="lazy" src="assets/images/general/home-showcase-01.jpg" style="--album-tilt: -1.1deg">
-          <img alt="" aria-hidden="true" class="home-showcase-image" data-home-showcase-layer="1" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+        <div aria-label="Photo slideshow" aria-live="off" aria-roledescription="carousel" class="home-showcase-stage"
+          data-home-showcase role="group">
+          <img
+            alt="Cooperative members in purple tops posing beside boxes, jerrycans and food items outside a market shop."
+            class="home-showcase-image is-active" data-home-showcase-layer="0" decoding="async" fetchpriority="low"
+            loading="lazy" src="images/general/home-showcase-01.jpg" style="--album-tilt: -1.1deg">
+          <img alt="" aria-hidden="true" class="home-showcase-image" data-home-showcase-layer="1" decoding="async"
+            loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
         </div>
       </section>
       <!-- Overview links for the five detailed cooperative services. -->
       <section class="w-full bg-surface-white py-space-xl">
         <div class="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter">
           <div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-lg">
-            <span class="font-caption-label text-caption-label font-bold uppercase tracking-widest text-primary mb-2">Our Portfolios</span>
-            <h2 class="font-headline-section text-headline-section-mobile md:text-headline-section text-on-surface font-semibold tracking-tight mb-3">Our Cooperative Services</h2>
-            <p class="font-body-large text-body-mobile md:text-body-large text-on-surface-variant">Explore the services offered by TOPTEN Cooperative.</p>
+            <span
+              class="font-caption-label text-caption-label font-bold uppercase tracking-widest text-primary mb-2">Our
+              Portfolios</span>
+            <h2
+              class="font-headline-section text-headline-section-mobile md:text-headline-section text-on-surface font-semibold tracking-tight mb-3">
+              Our Cooperative Services</h2>
+            <p class="font-body-large text-body-mobile md:text-body-large text-on-surface-variant">Explore the services
+              offered by TOPTEN Cooperative.</p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-surface-container-low p-8 flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+            <div
+              class="bg-surface-container-low p-8 flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
               <div>
                 <div class="mb-6 text-primary">
-                  <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10h14V10M9 20v-6h6v6" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.75"></path></svg>
+                  <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M3 12l9-9 9 9M5 10v10h14V10M9 20v-6h6v6" stroke-linecap="square" stroke-linejoin="miter"
+                      stroke-width="1.75"></path>
+                  </svg>
                 </div>
                 <h3 class="font-title-card text-title-card text-on-surface font-semibold mb-3">Homeowners Thrift</h3>
-                <p class="font-body-default text-body-default text-on-surface-variant mb-6 leading-relaxed">Cooperative thrift towards home ownership.</p>
+                <p class="font-body-default text-body-default text-on-surface-variant mb-6 leading-relaxed">Cooperative
+                  thrift towards home ownership.</p>
               </div>
               <div>
-                <a class="inline-flex items-center gap-2 font-button-label text-button-label text-primary font-semibold hover:underline" href="services.html#homeowners">
+                <a class="inline-flex items-center gap-2 font-button-label text-button-label text-primary font-semibold hover:underline"
+                  href="services.html#homeowners">
                   <span>Learn More</span>
                   <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
                 </a>
               </div>
             </div>
-            <div class="bg-surface-container-low p-8 flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+            <div
+              class="bg-surface-container-low p-8 flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
               <div>
                 <div class="mb-6 text-primary">
-                  <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 4m0 13V4m0 0L9 7" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.75"></path></svg>
+                  <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 4m0 13V4m0 0L9 7"
+                      stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.75"></path>
+                  </svg>
                 </div>
                 <h3 class="font-title-card text-title-card text-on-surface font-semibold mb-3">Landowners Thrift</h3>
-                <p class="font-body-default text-body-default text-on-surface-variant mb-6 leading-relaxed">Cooperative thrift towards land ownership.</p>
+                <p class="font-body-default text-body-default text-on-surface-variant mb-6 leading-relaxed">Cooperative
+                  thrift towards land ownership.</p>
               </div>
               <div>
-                <a class="inline-flex items-center gap-2 font-button-label text-button-label text-primary font-semibold hover:underline" href="services.html#landowners">
+                <a class="inline-flex items-center gap-2 font-button-label text-button-label text-primary font-semibold hover:underline"
+                  href="services.html#landowners">
                   <span>Learn More</span>
                   <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
                 </a>
               </div>
             </div>
-            <div class="bg-surface-container-low p-8 flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+            <div
+              class="bg-surface-container-low p-8 flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
               <div>
                 <div class="mb-6 text-primary">
-                  <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.75"></path></svg>
+                  <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" stroke-linecap="square"
+                      stroke-linejoin="miter" stroke-width="1.75"></path>
+                  </svg>
                 </div>
                 <h3 class="font-title-card text-title-card text-on-surface font-semibold mb-3">LandTrade Thrift</h3>
-                <p class="font-body-default text-body-default text-on-surface-variant mb-6 leading-relaxed">Contributions for real estate trading.</p>
+                <p class="font-body-default text-body-default text-on-surface-variant mb-6 leading-relaxed">
+                  Contributions for real estate trading.</p>
               </div>
               <div>
-                <a class="inline-flex items-center gap-2 font-button-label text-button-label text-primary font-semibold hover:underline" href="services.html#landtrade">
+                <a class="inline-flex items-center gap-2 font-button-label text-button-label text-primary font-semibold hover:underline"
+                  href="services.html#landtrade">
                   <span>Learn More</span>
                   <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
                 </a>
               </div>
             </div>
-            <div class="bg-surface-container-low p-8 flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+            <div
+              class="bg-surface-container-low p-8 flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
               <div>
                 <div class="mb-6 text-primary">
-                  <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.75" viewBox="0 0 24 24"><rect height="15" rx="2" stroke-linecap="square" width="20" x="2" y="5"></rect><path d="M2 10h20"></path><path d="M15 15h4"></path><circle cx="7" cy="15" fill="currentColor" r="1.5"></circle></svg>
+                  <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-linecap="square"
+                    stroke-linejoin="miter" stroke-width="1.75" viewBox="0 0 24 24">
+                    <rect height="15" rx="2" stroke-linecap="square" width="20" x="2" y="5"></rect>
+                    <path d="M2 10h20"></path>
+                    <path d="M15 15h4"></path>
+                    <circle cx="7" cy="15" fill="currentColor" r="1.5"></circle>
+                  </svg>
                 </div>
                 <h3 class="font-title-card text-title-card text-on-surface font-semibold mb-3">ThriftSave</h3>
-                <p class="font-body-default text-body-default text-on-surface-variant mb-6 leading-relaxed">Structured thrift contribution options.</p>
+                <p class="font-body-default text-body-default text-on-surface-variant mb-6 leading-relaxed">Structured
+                  thrift contribution options.</p>
               </div>
               <div>
-                <a class="inline-flex items-center gap-2 font-button-label text-button-label text-primary font-semibold hover:underline" href="services.html#thriftsave">
+                <a class="inline-flex items-center gap-2 font-button-label text-button-label text-primary font-semibold hover:underline"
+                  href="services.html#thriftsave">
                   <span>Learn More</span>
                   <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
                 </a>
               </div>
             </div>
-            <div class="bg-surface-container-low p-8 flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1 md:col-span-2 lg:col-span-1">
+            <div
+              class="bg-surface-container-low p-8 flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1 md:col-span-2 lg:col-span-1">
               <div>
                 <div class="mb-6 text-primary">
-                  <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.75"></path></svg>
+                  <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.75"></path>
+                  </svg>
                 </div>
                 <h3 class="font-title-card text-title-card text-on-surface font-semibold mb-3">FoodThrift</h3>
-                <p class="font-body-default text-body-default text-on-surface-variant mb-6 leading-relaxed">Contributions towards food items, equipment and other products.</p>
+                <p class="font-body-default text-body-default text-on-surface-variant mb-6 leading-relaxed">
+                  Contributions towards food items, equipment and other products.</p>
               </div>
               <div>
-                <a class="inline-flex items-center gap-2 font-button-label text-button-label text-primary font-semibold hover:underline" href="services.html#foodthrift">
+                <a class="inline-flex items-center gap-2 font-button-label text-button-label text-primary font-semibold hover:underline"
+                  href="services.html#foodthrift">
                   <span>Learn More</span>
                   <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
                 </a>
@@ -407,35 +568,52 @@
             </div>
           </div>
           <div class="mt-space-lg flex justify-center">
-            <a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-button-label text-button-label px-8 py-3.5 rounded-none hover:bg-primary transition-colors" href="services.html">EXPLORE ALL SERVICES</a>
+            <a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-button-label text-button-label px-8 py-3.5 rounded-none hover:bg-primary transition-colors"
+              href="services.html">EXPLORE ALL SERVICES</a>
           </div>
         </div>
       </section>
       <!-- Short homepage introduction to the cooperative. -->
       <section class="w-full bg-light-blue-surface py-space-xl">
         <div class="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter">
-          <div class="bg-surface-white p-space-md md:p-space-lg flex flex-col md:flex-row gap-space-lg items-start relative overflow-hidden">
+          <div
+            class="bg-surface-white p-space-md md:p-space-lg flex flex-col md:flex-row gap-space-lg items-start relative overflow-hidden">
             <div class="w-full md:w-2 bg-primary-container self-stretch shrink-0 h-2 md:h-auto"></div>
             <div class="flex flex-col flex-1">
-              <span class="font-caption-label text-caption-label font-bold uppercase tracking-widest text-primary mb-2">Corporate Identity</span>
-              <h2 class="font-headline-section text-headline-section-mobile md:text-headline-section text-on-surface font-semibold tracking-tight mb-4">About TOPTEN Cooperative</h2>
-              <p class="font-body-large text-body-mobile md:text-body-large text-on-surface leading-relaxed mb-6 max-w-4xl">Topten (Owerri-North) Multipurpose Cooperative Society Limited is a cooperative established in 2017 and registered in Imo State, Nigeria. The cooperative focuses on real estate marketing and trading, thrift contributions, food distribution and related services.</p>
+              <span
+                class="font-caption-label text-caption-label font-bold uppercase tracking-widest text-primary mb-2">Corporate
+                Identity</span>
+              <h2
+                class="font-headline-section text-headline-section-mobile md:text-headline-section text-on-surface font-semibold tracking-tight mb-4">
+                About TOPTEN Cooperative</h2>
+              <p
+                class="font-body-large text-body-mobile md:text-body-large text-on-surface leading-relaxed mb-6 max-w-4xl">
+                Topten (Owerri-North) Multipurpose Cooperative Society Limited is a cooperative established in 2017 and
+                registered in Imo State, Nigeria. The cooperative focuses on real estate marketing and trading, thrift
+                contributions, food distribution and related services.</p>
               <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 py-6 mb-6 bg-surface-container-low p-6">
                 <div>
-                  <p class="font-legal-micro text-legal-micro uppercase tracking-wider text-on-surface-variant font-medium">Established</p>
+                  <p
+                    class="font-legal-micro text-legal-micro uppercase tracking-wider text-on-surface-variant font-medium">
+                    Established</p>
                   <p class="font-title-card text-title-card font-bold text-primary mt-1">2017</p>
                 </div>
                 <div>
-                  <p class="font-legal-micro text-legal-micro uppercase tracking-wider text-on-surface-variant font-medium">Registration</p>
+                  <p
+                    class="font-legal-micro text-legal-micro uppercase tracking-wider text-on-surface-variant font-medium">
+                    Registration</p>
                   <p class="font-title-card text-title-card font-bold text-primary mt-1">SRC: 00986 Dc</p>
                 </div>
                 <div>
-                  <p class="font-legal-micro text-legal-micro uppercase tracking-wider text-on-surface-variant font-medium">Headquarters</p>
+                  <p
+                    class="font-legal-micro text-legal-micro uppercase tracking-wider text-on-surface-variant font-medium">
+                    Headquarters</p>
                   <p class="font-title-card text-title-card font-bold text-primary mt-1">Owerri, Nigeria</p>
                 </div>
               </div>
               <div>
-                <a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-button-label text-button-label px-7 py-3 rounded-none hover:bg-primary transition-colors" href="about-us.html">LEARN MORE ABOUT US</a>
+                <a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-button-label text-button-label px-7 py-3 rounded-none hover:bg-primary transition-colors"
+                  href="about-us.html">LEARN MORE ABOUT US</a>
               </div>
             </div>
           </div>
@@ -445,52 +623,86 @@
       <section class="w-full bg-surface-white py-space-xl">
         <div class="max-w-[880px] mx-auto px-gutter-mobile md:px-gutter">
           <div class="flex flex-col items-center text-center mb-space-lg">
-            <span class="font-caption-label text-caption-label font-bold uppercase tracking-widest text-primary mb-2">Member Support &amp; Clarity</span>
-            <h2 class="font-headline-section text-headline-section-mobile md:text-headline-section text-on-surface font-semibold tracking-tight">Frequently Asked Questions</h2>
+            <span
+              class="font-caption-label text-caption-label font-bold uppercase tracking-widest text-primary mb-2">Member
+              Support &amp; Clarity</span>
+            <h2
+              class="font-headline-section text-headline-section-mobile md:text-headline-section text-on-surface font-semibold tracking-tight">
+              Frequently Asked Questions</h2>
           </div>
           <div class="flex flex-col space-y-4">
             <details class="faq-item bg-surface-container-low" name="faq">
               <summary class="faq-item__question">
-                <span class="font-title-card text-[18px] leading-[26px] md:text-title-card font-semibold text-on-surface">Is Topten registered?</span>
-                <span class="material-symbols-outlined faq-item__icon faq-item__icon--open" aria-hidden="true">add</span>
-                <span class="material-symbols-outlined faq-item__icon faq-item__icon--close" aria-hidden="true">remove</span>
+                <span
+                  class="font-title-card text-[18px] leading-[26px] md:text-title-card font-semibold text-on-surface">Is
+                  Topten registered?</span>
+                <span class="material-symbols-outlined faq-item__icon faq-item__icon--open"
+                  aria-hidden="true">add</span>
+                <span class="material-symbols-outlined faq-item__icon faq-item__icon--close"
+                  aria-hidden="true">remove</span>
               </summary>
-              <div class="px-6 pb-6 pt-0 font-body-default text-body-default text-on-surface-variant leading-relaxed faq-item__answer">Topten is duly registered under the Nigeria Cooperative Societies Law, 2004.</div>
+              <div
+                class="px-6 pb-6 pt-0 font-body-default text-body-default text-on-surface-variant leading-relaxed faq-item__answer">
+                Topten is duly registered under the Nigeria Cooperative Societies Law, 2004.</div>
             </details>
             <details class="faq-item bg-surface-container-low" name="faq">
               <summary class="faq-item__question">
-                <span class="font-title-card text-[18px] leading-[26px] md:text-title-card font-semibold text-on-surface">Who can access Topten services?</span>
-                <span class="material-symbols-outlined faq-item__icon faq-item__icon--open" aria-hidden="true">add</span>
-                <span class="material-symbols-outlined faq-item__icon faq-item__icon--close" aria-hidden="true">remove</span>
+                <span
+                  class="font-title-card text-[18px] leading-[26px] md:text-title-card font-semibold text-on-surface">Who
+                  can access Topten services?</span>
+                <span class="material-symbols-outlined faq-item__icon faq-item__icon--open"
+                  aria-hidden="true">add</span>
+                <span class="material-symbols-outlined faq-item__icon faq-item__icon--close"
+                  aria-hidden="true">remove</span>
               </summary>
-              <div class="px-6 pb-6 pt-0 font-body-default text-body-default text-on-surface-variant leading-relaxed faq-item__answer">Topten services are for its members only.</div>
+              <div
+                class="px-6 pb-6 pt-0 font-body-default text-body-default text-on-surface-variant leading-relaxed faq-item__answer">
+                Topten services are for its members only.</div>
             </details>
             <details class="faq-item bg-surface-container-low" name="faq">
               <summary class="faq-item__question">
-                <span class="font-title-card text-[18px] leading-[26px] md:text-title-card font-semibold text-on-surface">Is Topten a real estate development company?</span>
-                <span class="material-symbols-outlined faq-item__icon faq-item__icon--open" aria-hidden="true">add</span>
-                <span class="material-symbols-outlined faq-item__icon faq-item__icon--close" aria-hidden="true">remove</span>
+                <span
+                  class="font-title-card text-[18px] leading-[26px] md:text-title-card font-semibold text-on-surface">Is
+                  Topten a real estate development company?</span>
+                <span class="material-symbols-outlined faq-item__icon faq-item__icon--open"
+                  aria-hidden="true">add</span>
+                <span class="material-symbols-outlined faq-item__icon faq-item__icon--close"
+                  aria-hidden="true">remove</span>
               </summary>
-              <div class="px-6 pb-6 pt-0 font-body-default text-body-default text-on-surface-variant leading-relaxed faq-item__answer">No, Topten is only engaged in real estate marketing and trading.</div>
+              <div
+                class="px-6 pb-6 pt-0 font-body-default text-body-default text-on-surface-variant leading-relaxed faq-item__answer">
+                No, Topten is only engaged in real estate marketing and trading.</div>
             </details>
             <details class="faq-item bg-surface-container-low" name="faq">
               <summary class="faq-item__question">
-                <span class="font-title-card text-[18px] leading-[26px] md:text-title-card font-semibold text-on-surface">How do I make payment to Topten?</span>
-                <span class="material-symbols-outlined faq-item__icon faq-item__icon--open" aria-hidden="true">add</span>
-                <span class="material-symbols-outlined faq-item__icon faq-item__icon--close" aria-hidden="true">remove</span>
+                <span
+                  class="font-title-card text-[18px] leading-[26px] md:text-title-card font-semibold text-on-surface">How
+                  do I make payment to Topten?</span>
+                <span class="material-symbols-outlined faq-item__icon faq-item__icon--open"
+                  aria-hidden="true">add</span>
+                <span class="material-symbols-outlined faq-item__icon faq-item__icon--close"
+                  aria-hidden="true">remove</span>
               </summary>
-              <div class="px-6 pb-6 pt-0 font-body-default text-body-default text-on-surface-variant leading-relaxed faq-item__answer">
+              <div
+                class="px-6 pb-6 pt-0 font-body-default text-body-default text-on-surface-variant leading-relaxed faq-item__answer">
                 Topten is liable only for payments made to its bank account or to accredited staff.
-                <span class="text-tertiary font-medium block mt-2">[Notice: Pending TOPTEN management confirmation against Terms &amp; Conditions Clauses 10 &amp; 11]</span>
+                <span class="text-tertiary font-medium block mt-2">[Notice: Pending TOPTEN management confirmation
+                  against Terms &amp; Conditions Clauses 10 &amp; 11]</span>
               </div>
             </details>
             <details class="faq-item bg-surface-container-low" name="faq">
               <summary class="faq-item__question">
-                <span class="font-title-card text-[18px] leading-[26px] md:text-title-card font-semibold text-on-surface">What payment options are available?</span>
-                <span class="material-symbols-outlined faq-item__icon faq-item__icon--open" aria-hidden="true">add</span>
-                <span class="material-symbols-outlined faq-item__icon faq-item__icon--close" aria-hidden="true">remove</span>
+                <span
+                  class="font-title-card text-[18px] leading-[26px] md:text-title-card font-semibold text-on-surface">What
+                  payment options are available?</span>
+                <span class="material-symbols-outlined faq-item__icon faq-item__icon--open"
+                  aria-hidden="true">add</span>
+                <span class="material-symbols-outlined faq-item__icon faq-item__icon--close"
+                  aria-hidden="true">remove</span>
               </summary>
-              <div class="px-6 pb-6 pt-0 font-body-default text-body-default text-on-surface-variant leading-relaxed faq-item__answer">Payments can be made daily, weekly, monthly or outright.</div>
+              <div
+                class="px-6 pb-6 pt-0 font-body-default text-body-default text-on-surface-variant leading-relaxed faq-item__answer">
+                Payments can be made daily, weekly, monthly or outright.</div>
             </details>
           </div>
         </div>
@@ -503,11 +715,13 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-brand__header">
-            <img class="footer-brand__logo" src="assets/images/logo/topten-logo.png" alt="TOPTEN Logo" width="320" height="313" loading="lazy">
+            <img class="footer-brand__logo" src="images/logo/topten-logo.png" alt="TOPTEN Logo" width="320" height="313"
+              loading="lazy">
             <span class="footer-brand__name">TOPTEN COOPERATIVE</span>
           </div>
           <p class="footer-brand__reg">SRC: 00986 Dc</p>
-          <p class="footer-brand__blurb">A cooperative focused on real estate marketing and trading, thrift contributions, food distribution and related services.</p>
+          <p class="footer-brand__blurb">A cooperative focused on real estate marketing and trading, thrift
+            contributions, food distribution and related services.</p>
           <p class="footer-brand__slogan">THE POWER OF TEN!</p>
         </div>
 
@@ -518,11 +732,11 @@
             <span class="material-symbols-outlined footer-column__chevron" aria-hidden="true">expand_more</span>
           </summary>
           <ul class="footer-column__list">
-          <li><a class="footer-link" href="index.html">Home</a></li>
-          <li><a class="footer-link" href="about-us.html">About Us</a></li>
-          <li><a class="footer-link" href="become-an-agent.html">Become an Agent</a></li>
-          <li><a class="footer-link" href="contact-us.html">Contact Us</a></li>
-          <li><a class="footer-link" href="services.html">All Services</a></li>
+            <li><a class="footer-link" href="index.html">Home</a></li>
+            <li><a class="footer-link" href="about-us.html">About Us</a></li>
+            <li><a class="footer-link" href="become-an-agent.html">Become an Agent</a></li>
+            <li><a class="footer-link" href="contact-us.html">Contact Us</a></li>
+            <li><a class="footer-link" href="services.html">All Services</a></li>
           </ul>
         </details>
 
@@ -532,26 +746,41 @@
             <span class="material-symbols-outlined footer-column__chevron" aria-hidden="true">expand_more</span>
           </summary>
           <ul class="footer-column__list">
-          <li><a class="footer-link" href="services.html#homeowners">Homeowners Thrift</a></li>
-          <li><a class="footer-link" href="services.html#landowners">Landowners Thrift</a></li>
-          <li><a class="footer-link" href="services.html#landtrade">LandTrade Thrift</a></li>
-          <li><a class="footer-link" href="services.html#thriftsave">ThriftSave</a></li>
-          <li><a class="footer-link" href="services.html#foodthrift">FoodThrift</a></li>
+            <li><a class="footer-link" href="services.html#homeowners">Homeowners Thrift</a></li>
+            <li><a class="footer-link" href="services.html#landowners">Landowners Thrift</a></li>
+            <li><a class="footer-link" href="services.html#landtrade">LandTrade Thrift</a></li>
+            <li><a class="footer-link" href="services.html#thriftsave">ThriftSave</a></li>
+            <li><a class="footer-link" href="services.html#foodthrift">FoodThrift</a></li>
           </ul>
         </details>
 
         <div class="footer-contact">
           <h3 class="footer-column__heading">Contact &amp; Follow Us</h3>
           <ul class="footer-contact__list">
-            <li><span class="material-symbols-outlined" aria-hidden="true">call</span><a class="footer-contact__link" href="tel:07069564373">07069564373</a></li>
-            <li><span class="material-symbols-outlined" aria-hidden="true">mail</span><span class="footer-contact__email">toptencoopbm@gmail.com.ng</span></li>
-            <li><span class="material-symbols-outlined" aria-hidden="true">location_on</span><span>SSB9, Imo Modern Int&#39;l Market, Aba Road, Owerri, Imo State</span></li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">call</span><a class="footer-contact__link"
+                href="tel:07069564373">07069564373</a></li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">mail</span><span
+                class="footer-contact__email">toptencoopbm@gmail.com.ng</span></li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">location_on</span><span>SSB9, Imo Modern
+                Int&#39;l Market, Aba Road, Owerri, Imo State</span></li>
           </ul>
           <div class="footer-social">
             <span class="footer-social__label">Follow us on:</span>
-            <span class="social-icon" role="img" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></span>
-            <span class="social-icon" role="img" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.031 0C5.397 0 0 5.397 0 12.031c0 2.115.549 4.181 1.594 5.99L.055 24l6.155-1.615a11.97 11.97 0 005.821 1.493h.005c6.632 0 12.03-5.398 12.03-12.033 0-3.214-1.252-6.236-3.528-8.514A11.95 11.95 0 0012.031 0zm.004 21.996h-.004a9.96 9.96 0 01-5.076-1.39l-.364-.216-3.771.989 1.006-3.676-.237-.377a9.94 9.94 0 01-1.523-5.295c0-5.503 4.478-9.981 9.984-9.981 2.666 0 5.172 1.038 7.057 2.925a9.927 9.927 0 012.923 7.057c0 5.505-4.479 9.984-9.985 9.984zm5.474-7.475c-.3-.15-1.774-.875-2.049-.975-.275-.1-.475-.15-.675.15-.2.3-.775.975-.95 1.175-.175.2-.35.225-.65.075-.3-.15-1.267-.467-2.414-1.488-.893-.796-1.496-1.78-1.671-2.08-.175-.3-.019-.462.131-.611.135-.134.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.675-1.625-.925-2.225-.244-.583-.492-.504-.675-.513-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8.375-.275.3-1.05 1.025-1.05 2.5s1.075 2.898 1.225 3.1c.15.2 2.116 3.23 5.127 4.53.716.31 1.275.495 1.71.634.719.229 1.373.197 1.89.12.577-.086 1.774-.725 2.024-1.425.25-.7.25-1.3.175-1.425-.075-.125-.275-.2-.575-.35z"/></svg></span>
-            <span class="social-icon" role="img" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-1.01-.02 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></span>
+            <span class="social-icon" role="img" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg></span>
+            <span class="social-icon" role="img" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="M12.031 0C5.397 0 0 5.397 0 12.031c0 2.115.549 4.181 1.594 5.99L.055 24l6.155-1.615a11.97 11.97 0 005.821 1.493h.005c6.632 0 12.03-5.398 12.03-12.033 0-3.214-1.252-6.236-3.528-8.514A11.95 11.95 0 0012.031 0zm.004 21.996h-.004a9.96 9.96 0 01-5.076-1.39l-.364-.216-3.771.989 1.006-3.676-.237-.377a9.94 9.94 0 01-1.523-5.295c0-5.503 4.478-9.981 9.984-9.981 2.666 0 5.172 1.038 7.057 2.925a9.927 9.927 0 012.923 7.057c0 5.505-4.479 9.984-9.985 9.984zm5.474-7.475c-.3-.15-1.774-.875-2.049-.975-.275-.1-.475-.15-.675.15-.2.3-.775.975-.95 1.175-.175.2-.35.225-.65.075-.3-.15-1.267-.467-2.414-1.488-.893-.796-1.496-1.78-1.671-2.08-.175-.3-.019-.462.131-.611.135-.134.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.675-1.625-.925-2.225-.244-.583-.492-.504-.675-.513-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8.375-.275.3-1.05 1.025-1.05 2.5s1.075 2.898 1.225 3.1c.15.2 2.116 3.23 5.127 4.53.716.31 1.275.495 1.71.634.719.229 1.373.197 1.89.12.577-.086 1.774-.725 2.024-1.425.25-.7.25-1.3.175-1.425-.075-.125-.275-.2-.575-.35z" />
+              </svg></span>
+            <span class="social-icon" role="img" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-1.01-.02 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+              </svg></span>
           </div>
         </div>
       </div>
@@ -565,7 +794,9 @@
       </div>
     </div>
   </footer>
-  <script src="assets/js/mobile-menu.js" defer></script>
-  <script src="assets/js/carousel.js" defer></script>
+  <script src="scripts/mobile-menu.js" defer></script>
+  <script src="scripts/carousel.js" defer></script>
+  <script type="module" src="scripts/membership-form.mjs"></script>
 </body>
+
 </html>
