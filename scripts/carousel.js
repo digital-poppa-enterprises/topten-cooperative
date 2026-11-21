@@ -1,12 +1,5 @@
-/**
- * TOPTEN Cooperative: home page carousels (the only JavaScript the site needs).
- *
- * Everything else (navigation, dropdowns, mobile menu, FAQ, footer dropdowns, form
- * behaviour) is plain HTML + CSS. This file drives two things on index.html:
- *   1. The four-slide hero carousel (prev/next arrows, dots, autoplay).
- *   2. The photo-only showcase slideshow (timed cross-fade, no controls).
- * Each initialiser exits quietly if its markup is not on the page.
- */
+//TOPTEN Cooperative: home page carousels.
+
 (() => {
   'use strict';
 
@@ -53,6 +46,7 @@
       window.clearInterval(timerId);
       timerId = null;
     }
+
     /** (Re)start the timer from zero if autoplay is currently allowed; otherwise make sure it is stopped. */
     function sync() {
       stop();
@@ -111,10 +105,10 @@
     if (!Array.isArray(slides) || slides.length < 2) return;
 
     const INTERVAL_MS = 5000;
-    const MAX_ATTEMPTS = 3;                    // consecutive failures before a photo is skipped
-    const loaded = new Map();                  // index -> decoded Image (successes only)
-    const pending = new Map();                 // index -> in-flight promise (removed when settled)
-    const failures = new Map();                // index -> consecutive failure count
+    const MAX_ATTEMPTS = 3;
+    const loaded = new Map();
+    const pending = new Map();
+    const failures = new Map();
     let currentIndex = 0;
     let activeLayer = 0;
     let timerId = null;

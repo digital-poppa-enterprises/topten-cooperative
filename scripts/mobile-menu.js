@@ -1,11 +1,5 @@
-/**
- * Mobile / tablet menu: closes the native popover when a link inside it is chosen.
- *
- * The menu itself opens and closes with HTML + CSS only (popover attribute). The one thing the
- * browser does not do is close a popover when a link inside it points at the SAME page
- * (for example the Services page's "ThriftSave" link, which only jumps to #thriftsave).
- * Links to other pages already leave the page, so this only matters for same-page links.
- */
+// Mobile / tablet menu: closes the native popover when a link inside it is chosen.
+
 (() => {
   'use strict';
 

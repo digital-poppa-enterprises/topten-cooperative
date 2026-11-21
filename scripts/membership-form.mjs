@@ -1,3 +1,4 @@
+// HubSpot form configuration and submission settings.
 const PORTAL_ID = "149825333";
 const FORM_ID = "be8b35d0-8858-45ef-a809-5441d3df9a9c";
 const HUBSPOT_ENDPOINT =
@@ -6,9 +7,11 @@ const PHONE_LIBRARY_BASE = "https://cdn.jsdelivr.net/npm/intl-tel-input@29.5.11"
 const PHONE_E164_PATTERN = /^\+[1-9]\d{1,14}$/;
 const MIN_FORM_TIME_MS = 1500;
 
+// Only initialise the form when a membership form exists on the page.
 const form = document.querySelector(".member-form");
 
 if (form) {
+  // Cache form controls and status elements used throughout validation and submission.
   const nameInput = form.querySelector("#member-full-name");
   const emailInput = form.querySelector("#member-email");
   const phoneInput = form.querySelector("#member-phone");
@@ -35,8 +38,10 @@ if (form) {
     [whatsappInput, form.querySelector("#member-whatsapp-error")],
   ]);
 
+  // Load the phone library and utilities only when this module runs.
   function initializePhoneInputs() {
     return import(`${PHONE_LIBRARY_BASE}/dist/js/intlTelInput.mjs`).then(({ default: intlTelInput }) => {
+      // Loading the utility module enables country and phone-number validation.
       const utilsPromise = import(`${PHONE_LIBRARY_BASE}/dist/js/utils.js`);
       utilsPromise.catch(() => {});
 
@@ -60,10 +65,12 @@ if (form) {
     return null;
   });
 
+  // Determine whether the customer chose email, phone, or WhatsApp.
   function selectedMethod() {
     return form.querySelector('input[name="preferred_contact_method"]:checked')?.value ?? "";
   }
 
+  // Display helpers keep form status and validation consistent.
   function clearStatus() {
     status.hidden = true;
     status.textContent = "";
@@ -132,6 +139,7 @@ if (form) {
       .some(({ input, method }) => method === selectedMethod() || input.value.trim() !== "");
   }
 
+  // Validate the form and prepare the submission payload for HubSpot.
   async function collectSubmission() {
     clearAllFieldErrors();
 
@@ -187,6 +195,7 @@ if (form) {
       return null;
     }
 
+    // Load phone validation only when a phone number is relevant to this submission.
     let phoneInstances = null;
     if (phoneLibraryNeeded()) {
       const setup = await phoneSetupPromise;
@@ -232,6 +241,7 @@ if (form) {
       normalizedPhones.set(input, normalized);
     }
 
+    // HubSpot expects field values as objects with an object type, field name, and value.
     const fields = [
       { name: "membership_inquiry_name", value: name },
       { name: "preferred_contact_method", value: method },
@@ -245,6 +255,7 @@ if (form) {
       fields.push({ name: "hs_whatsapp_phone_number", value: normalizedPhones.get(whatsappInput) });
     }
 
+    // Include page context when the form is running on a public website, not locally.
     const context = {};
     const hostname = window.location.hostname;
     const isLocalHost =
@@ -300,6 +311,7 @@ if (form) {
     return "We could not submit your enquiry. Check your details and try again.";
   }
 
+  // Keep required fields, indicators, and status messages in sync with contact-method changes.
   methodRadios.forEach((radio) => {
     radio.addEventListener("change", () => {
       clearAllFieldErrors();
@@ -325,6 +337,7 @@ if (form) {
 
   updateRequiredFields();
 
+  // Submit the form through HubSpot and prevent duplicate submissions.
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
     if (isSubmitting) return;

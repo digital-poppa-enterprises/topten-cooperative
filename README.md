@@ -16,20 +16,6 @@ topten-cooperative/
 ├── terms-and-conditions.html   Terms & Conditions
 ├── privacy-policy.html         Privacy Policy
 ├── favicon.ico                 Browser-tab icon (16/32/48px)
-├── assets/
-│   ├── css/
-│   │   └── styles.css          All styling, in labelled sections (tokens, header, hero, footer, utilities, print...)
-│   ├── js/
-│   │   ├── carousel.js         Home page only: hero carousel + photo showcase
-│   │   ├── mobile-menu.js      All pages: closes the mobile menu when a link inside it is chosen
-│   │   └── print-button.js     Terms page only: makes "Print Document" open the print dialog
-│   ├── fonts/
-│   │   └── localize-fonts.py   One-time script that switches the site to locally hosted fonts (see below)
-│   └── images/
-│       ├── logo/               Logo and favicon PNGs (favicon-32, favicon-192, apple-touch-icon)
-│       ├── banners/            Home hero slides (home-hero-1 to 4, in slide order)
-│       ├── services/           Service-section photos (Homeowners, FoodThrift gallery)
-│       └── general/            Home photo showcase (home-showcase-01 to 11), contact page image
 └── README.md
 ```
 
@@ -76,17 +62,7 @@ printed with Ctrl/Cmd+P.
 
 ## Fonts
 
-The pages currently load **Plus Jakarta Sans** (text, weights 400-700) and **Material Symbols Outlined** (icons)
-from Google Fonts, so an internet connection is needed for them. To host them locally instead, run once on a
-computer with internet access:
-
-```bash
-python3 assets/fonts/localize-fonts.py
-```
-
-It downloads the `.woff2` files into `assets/fonts/`, writes the `@font-face` rules into `styles.css` (between the
-`LOCAL-FONTS` markers) and removes the Google Fonts `<link>` tags from the seven pages. It needs only Python 3.
-Afterwards, open a page with the internet disconnected to confirm text and icons look the same.
+The pages load **Plus Jakarta Sans** (text, weights 400-700) and **Material Symbols Outlined** (icons) from Google Fonts.
 
 ## SEO
 
@@ -95,9 +71,9 @@ Each page has its own `<title>` and a unique `<meta name="description">` in its 
 ## Common edits
 
 - **Change the home photo showcase:** edit the JSON list in the `<script id="home-showcase-slides">` block
-  inside `index.html` (image path + alt text), and put the image in `assets/images/general/`. The first photo
+  inside `index.html` (image path + alt text), and put the image in `images/general/`. The first photo
   is also written directly in the markup (the `<img ... data-home-showcase-layer="0">` below it), so update both.
-- **Change brand colours:** edit the variables at the top of `assets/css/styles.css` (section 1).
+- **Change brand colours:** edit the variables at the top of `styles/small.css` (section 1).
 - **HubSpot membership form:** the form and script use the public portal/form IDs and property names configured in
   `scripts/membership-form.mjs`. The embed identifies the form as EU1, so submissions use HubSpot's EU1 Forms API
   endpoint. The matching HubSpot form must be published, have the mapped fields, allow contact creation without
