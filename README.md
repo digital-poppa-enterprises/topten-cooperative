@@ -47,4 +47,3 @@ Then open `http://localhost:8000`.
 - Add or replace images in the appropriate `images/` subfolder.
 - Change brand colours in `styles/small.css`.
 - Update the home hero or showcase content in `index.html` and `scripts/carousel.js`.
-- Check the privacy and terms pages for organisation-specific details before deployment.
